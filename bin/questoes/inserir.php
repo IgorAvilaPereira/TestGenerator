@@ -21,5 +21,6 @@
 			$result = pg_query_params($conexao, $sql, array()) or die ($sql);
 		}
 	}
-	header("Location: ./../../view/questoes/pagination.html");
+	header("Location: index.php");
+	
 ?>
