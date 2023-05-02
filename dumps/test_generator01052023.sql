@@ -5,7 +5,7 @@
 -- Dumped from database version 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1)
 -- Dumped by pg_dump version 14.7 (Ubuntu 14.7-0ubuntu0.22.04.1)
 
--- Started on 2023-05-01 21:26:35 -03
+-- Started on 2023-05-01 22:20:11 -03
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -1380,7 +1380,7 @@ ALTER TABLE ONLY public.questoes_tags
     ADD CONSTRAINT questoes_tags_tag_id_fkey FOREIGN KEY (tag_id) REFERENCES public.tags(id);
 
 
--- Completed on 2023-05-01 21:26:35 -03
+-- Completed on 2023-05-01 22:20:11 -03
 
 --
 -- PostgreSQL database dump complete
