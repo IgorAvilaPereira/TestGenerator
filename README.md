@@ -1,36 +1,55 @@
 # Test Generator
 
-Sistema para a construção de testes/provas. Permite adicionar questões, classificar questões em tags e gerar provas/testes de acordo com uma quantidade de questões definidas pelo usuário.
+Aplicação web para criação e gerenciamento de testes.
+Permite adicionar questões, categorizá-las com tags e gerar testes com base em um número especificado de perguntas.
 
-## Requisitos:
+## Funcionalidades
 
-* PHP 8.1.2
-* PostgreSQL 14.5
-* php-pgsql 
-* [Templates](https://raelcunha.com/template/)
-* Bootstrap
-* jQuery
-* Ajustar o __php.ini__ para receber arquivos via upload
+* **Adicionar Questões**: Facilita a inclusão de perguntas no sistema.
+* **Sistema de Tags**: Categoriza questões usando tags para melhor organização.
+* **Geração de Testes**: Gera testes selecionando a quantidade desejada de perguntas.
+* **Interface Web**: Interface amigável para gerenciamento de questões e geração de testes.
 
-## Instalação:
+## Tecnologias Utilizadas
 
-Restaurar ***dump*** no PostgreSQL:
+* **PHP 8.1.2**: Linguagem de script do lado servidor.
+* **PostgreSQL 14.5**: Sistema de gerenciamento de banco de dados.
+* **php-pgsql**: Extensão PHP para PostgreSQL.
+* **Templates**: Motor de templates para renderização das views.
+* **Bootstrap**: Framework front-end para design responsivo.
+* **jQuery**: Biblioteca JavaScript para manipulação do DOM.
 
-No terminal:
-```sh
-psql -h localhost -U postgres
-\i dumps/test_generator01052023.sql
-```
+## Instalação
 
-Iniciar o Teacher Organizer:
+1. **Restaurar o Dump do Banco de Dados**:
 
-No terminal:
-```sh
-./start.sh
-```
+   No terminal, execute os comandos:
 
-Acessar http://localhost:8081
+   ```bash
+   psql -h localhost -U postgres
+   \i dumps/test_generator01052023.sql
+   ```
 
-## Setup:
+2. **Iniciar a Aplicação**:
 
-* Desenvolvido no Linux Mint 21 x86_64 
+   Execute o script para iniciar a aplicação:
+
+   ```bash
+   ./start.sh
+   ```
+
+3. **Acessar a Aplicação**:
+
+   Abra o navegador e acesse:
+
+   ```
+   http://localhost:8081
+   ```
+
+## Ambiente de Desenvolvimento
+
+Esta aplicação foi desenvolvida no Linux Mint 21 x86\_64.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
